@@ -11,10 +11,8 @@ import Vet from '../features/vet/Vet'
 import DemoDrawer from '../features/demo/DemoDrawer'
 
 function Splash({ done }) {
-  const [n, setN] = useState(0)
-  useEffect(() => { const i = setInterval(() => setN((x) => x + 1), 700); const o = setTimeout(done, 3000); const k = () => done(); window.addEventListener('keydown', k); return () => { clearInterval(i); clearTimeout(o); window.removeEventListener('keydown', k) } }, [done])
-  return <div className="splash" onClick={done} role="button" tabIndex={0} aria-label={t.splash.skip}><Logo kind="logo" /><h1>{t.app}</h1><p className="sub">{t.farm}</p>
-    <ul>{t.splash.lines.slice(0, n).map((l) => <li key={l}><Icon n="check" size={16} /> {l}: {t.splash.ok}</li>)}</ul><p className="cap">{t.splash.skip}</p></div>
+  useEffect(() => { const o = setTimeout(done, 2500); const k = () => done(); window.addEventListener('keydown', k); return () => { clearTimeout(o); window.removeEventListener('keydown', k) } }, [done])
+  return <div className="splash" onClick={done} role="button" tabIndex={0} aria-label={t.splash.skip}><Logo kind="logo" /></div>
 }
 function Gate({ children }) {
   const s = useStore(), loc = useLocation(), [load, setLoad] = useState(false)
@@ -39,7 +37,6 @@ export default function App() {
         <div className="flex"><div className="logobox phone-only"><Logo kind="mark" /></div><b>{t.farm}</b></div>
         <div className="flex"><div className="clock"><b>{fmtTime(now, true)}</b><small>{fmtDate(now)}</small></div><span className="phone-only"><DemoBtn c="" /></span></div>
       </header>
-      <div className="banner" role="note">{t.banner}</div>
       <main><Gate><Routes><Route path="/home" element={<Home />} /><Route path="/cages" element={<Cages />} /><Route path="/report" element={<Report />} /><Route path="/vet" element={<Vet />} /><Route path="*" element={<Navigate to="/home" replace />} /></Routes></Gate></main>
     </div>
     {tools && <DemoDrawer onClose={() => setTools(false)} onSplash={() => setSplash(true)} />}
