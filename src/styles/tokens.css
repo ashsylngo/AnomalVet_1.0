@@ -1,0 +1,5 @@
+:root{--pink-50:#FFF8FA;--pink-100:#FFE9F0;--pink-200:#FFD3E1;--pink-300:#FFB6CD;--pink-600:#B82A5A;--pink-700:#961F48;
+--ink:#3B1F2B;--ink-soft:#7A5463;--line:#F0CBD8;--white:#FFFFFF;--surface:#FFFFFF;--page:#FFF8FA;--sidebar:#FFE9F0;--topbar:#FFFFFF;
+--status-normal-fg:#1B7A3A;--status-normal-bg:#E3F4E8;--status-watch-fg:#7A5C00;--status-watch-bg:#FFF4CC;--status-alert-fg:#B3261E;--status-alert-bg:#FDE3E1;
+--fresh-live-fg:#1B7A3A;--fresh-stale-fg:#9A5B00;--fresh-off-fg:#5B6770;--demo-banner-bg:#FFF4CC;--demo-banner-fg:#5C4500;
+--font:system-ui,"Segoe UI",Roboto,Arial,sans-serif;--radius:14px;--space-1:4px;--space-2:8px;--space-3:12px;--space-4:16px;--space-6:24px;--space-8:32px;--tap:44px}

@@ -1,0 +1,17 @@
+export const t = {
+  app: 'AnomalVet', farm: 'Demo Farm', demoTools: 'Demo tools',
+  banner: 'DEMO: simulated data. Not connected to real cameras, detection or a veterinarian.',
+  nav: { home: 'Home', cages: 'Cages', report: 'Report', vet: 'Vet' },
+  statusCap: 'Cage status (demo thresholds)', flag: 'Possible anomaly (demo). Not a diagnosis. Consult a veterinarian.',
+  tier: { normal: 'Normal', watch: 'Watch', alert: 'Alert' },
+  fresh: { live: 'Live', stale: 'Stale', offline: 'Offline' }, noData: 'No cage data',
+  cam: { title: (c) => `Camera: ${c}`, lg: 'Camera feed placeholder (demo). A live stream will appear here.', snapTitle: 'Attachment', snap: 'Snapshot placeholder (demo). A camera snapshot will attach here.', none: 'No camera signal', online: 'Online', offline: 'Offline', small: 'Camera placeholder' },
+  splash: { lines: ['Cage cameras', 'Anomaly detection', 'Report gateway'], ok: 'Simulated OK', skip: 'Tap or press any key to skip' },
+  loading: 'Loading…', retry: 'Try again', err: 'Something went wrong (demo error).', cancel: 'Cancel', close: 'Close', ago: { s: 's ago', m: 'min ago', h: 'h ago' },
+  home: { title: 'Cages', summary: (c, p, a) => `${c} cages, ${p} pigs, ${a} open ${a === 1 ? 'anomaly' : 'anomalies'}`, empty: 'No cages to show.', info: 'Cage information', pigs: 'Pig information', temp: 'Temperature', hum: 'Humidity', act: 'Activity', feed: 'Feeding', open: 'Open anomalies', camState: 'Camera', viewPigs: 'View pigs', openCam: 'Open camera', prep: 'Prepare report', avgW: 'Average weight', ages: 'Age range', count: 'Pigs', pigDrawer: (c) => `Pigs in ${c}`, tag: 'Tag', sex: 'Sex', age: 'Age', wk: 'wk', check: 'Check', ok: 'Normal',
+    sugNew: (c, tier) => `${c} is at ${tier}. Consider sending a report to the veterinarian.`, sugFollow: (c) => `${c} is back to Normal after a report. Consider a follow-up report.` },
+  cages: { title: 'Cages', pick: 'Cage', read: 'Readings', anoms: 'Open anomalies', none: 'No open anomalies.', conf: 'confidence', trend: 'Activity index, last 24 hours', watch: 'Watch (demo)', alert: 'Alert (demo)', reading: 'Reading' },
+  report: { title: 'Report to veterinarian', cage: 'Cage', pig: 'Pig', whole: 'Whole cage', sev: 'Severity', routine: 'Routine', urgent: 'Urgent', signs: 'Observed signs', details: 'Details', detailsHint: 'What you saw, how long, and any change in feed or water.', vet: 'Veterinarian', attach: 'Attach snapshot (placeholder)', preview: 'Preview', send: 'Send report (simulated)', confirmTitle: 'Send this report?', to: 'To', confirm: 'Send (simulated)', delivery: 'Delivery', sim: 'Simulated', queued: 'Queued', sent: 'Sent', delivered: 'Delivered', sentList: 'Sent reports', empty: 'No reports sent yet.', none: 'None selected', noDetails: 'None' },
+  vet: { clinic: 'Clinic information', store: 'Store information', name: 'Name', vet: 'Veterinarian', addr: 'Address', phone: 'Phone', hours: 'Opening hours', services: 'Services', carries: 'Carries', emergency: 'Emergency: contact the clinic directly (placeholder)', note: 'Demo: these details are placeholders. Replace with verified real information.' },
+  demo: { title: 'Demo tools', cage: 'Cage', anomaly: 'Anomaly in a cage', prep: 'Prepare report', normal: 'Back to normal', stale: 'Make Stale', offline: 'Make Offline', restore: 'Restore', camLost: 'Camera lost', camRestore: 'Restore camera', splash: 'Replay splash', delay: 'Data delay (seconds)', error: 'Show error state', reset: 'Reset demo', resetQ: 'Reset the demo and clear local changes?', status: 'Current status' },
+}
